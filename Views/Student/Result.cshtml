@@ -1,0 +1,23 @@
+﻿@model TerrenceDriveHubMVC.Models.Student
+
+<h2>Registration Result</h2>
+
+<p><strong>Name:</strong> @Model.Name</p>
+<p><strong>ID Number:</strong> @Model.IDNumber</p>
+<p><strong>Bank Details:</strong> @Model.BankDetails</p>
+<p><strong>Learner's License:</strong> @(Model.HasLearners ? "Yes" : "No")</p>
+<p><strong>Selected Package:</strong> @Model.SelectedPackage</p>
+<p><strong>License Code:</strong> @Model.LicenseCode</p>
+
+@if (Model.HasPaid)
+{
+    <p><strong>Payment Date:</strong> @Model.PaymentDate.ToShortDateString()</p>
+    <p><strong>Lesson Start Date:</strong> @Model.StartDate.ToShortDateString()</p>
+}
+else
+{
+    <p>⚠ Payment not received – lessons not scheduled.</p>
+}
+
+<a href="@Url.Action("Index", "Student")">Register Another Student</a>
+

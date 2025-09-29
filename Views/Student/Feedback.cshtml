@@ -1,0 +1,21 @@
+﻿@model TerrenceDriveHubMVC.Models.Feedback
+
+<h2>Give Feedback</h2>
+
+@using (Html.BeginForm("Feedback", "Student", FormMethod.Post))
+{
+    <label>Comment:</label>
+    <br />
+    @Html.TextAreaFor(m => m.Comment, 5, 50, null)
+    <br />
+    <br />
+
+    <label>Rating (1-5):</label>
+    <br />
+    @Html.TextBoxFor(m => m.Rating)
+    <br />
+    <br />
+
+    <input type="submit" value="Submit Feedback" />
+}
+

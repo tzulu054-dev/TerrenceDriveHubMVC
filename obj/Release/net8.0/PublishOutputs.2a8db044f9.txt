@@ -1,0 +1,7 @@
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\TerrenceDriveHubMVC.exe
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\TerrenceDriveHubMVC.dll
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\TerrenceDriveHubMVC.deps.json
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\TerrenceDriveHubMVC.runtimeconfig.json
+C:\Users\tzulu\OneDrive\Desktop\solutions\TerrenceDriveHubMVC\TerrenceDriveHubMVC\obj\Release\net8.0\PubTmp\Out\TerrenceDriveHubMVC.pdb

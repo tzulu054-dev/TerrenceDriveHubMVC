@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Terrence Driving School";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terrence Driving School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+        h1 { font-size: 60px; margin-bottom: 20px; }
+        p { font-size: 24px; margin-bottom: 50px; }
+        a.button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-size: 24px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        a.button:hover { background-color: #ff3b2f; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Terrence Driving School</h1>
+    <p>Learn, drive, and become a licensed driver!</p>
+    <a class="button" href="@Url.Action("Index", "Student")">Get Started</a>
+</body>
+</html>
+

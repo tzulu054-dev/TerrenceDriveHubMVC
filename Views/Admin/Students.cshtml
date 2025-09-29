@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TerrenceDriveHubMVC.Models.Student>
+
+<h2>All Registered Students</h2>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>ID Number</th>
+        <th>Bank Details</th>
+        <th>Learner's License</th>
+        <th>Paid?</th>
+    </tr>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.IDNumber</td>
+            <td>@s.BankDetails</td>
+            <td>@(s.HasLearners ? "Yes" : "No")</td>
+            <td>@(s.HasPaid ? "Yes" : "No")</td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<TerrenceDriveHubMVC.Models.Instructor>
+
+<h2>Assigned Students & Lessons</h2>
+
+@foreach (var instructor in Model)
+{
+    <h3>@instructor.Name</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Lesson ID</th>
+            <th>Student ID</th>
+            <th>Package ID</th>
+            <th>Lesson Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        @foreach (var lesson in instructor.AssignedLessons)
+        {
+            <tr>
+                <td>@lesson.Id</td>
+                <td>@lesson.StudentId</td>
+                <td>@lesson.PackageId</td>
+                <td>@lesson.LessonDate.ToShortDateString()</td>
+                <td>@lesson.Status</td>
+                <td>
+                    @if (lesson.Status != "Completed")
+                    {
+                        <form asp-action="UpdateLessonStatus" method="post">
+                            <input type="hidden" name="instructorId" value="@instructor.Id" />
+                            <input type="hidden" name="lessonId" value="@lesson.Id" />
+                            <input type="submit" value="Mark Completed" />
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+}

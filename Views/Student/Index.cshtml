@@ -1,0 +1,44 @@
+﻿@model TerrenceDriveHubMVC.Models.Student
+
+<h2>Register for Driving Lessons</h2>
+
+@using (Html.BeginForm("Register", "Student", FormMethod.Post))
+{
+    <label>Name:</label>
+    @Html.TextBoxFor(m => m.Name)
+    <br />
+    <br />
+
+    <label>ID Number:</label>
+    @Html.TextBoxFor(m => m.IDNumber)
+    <br />
+    <br />
+
+    <label>Bank Details:</label>
+    @Html.TextBoxFor(m => m.BankDetails)
+    <br />
+    <br />
+
+    <label>Has Learner's License?</label>
+    @Html.CheckBoxFor(m => m.HasLearners)
+    <br />
+    <br />
+
+    <label>Payment Received?</label>
+    @Html.CheckBoxFor(m => m.HasPaid)
+    <br />
+    <br />
+
+    <label>Lesson Package:</label>
+    @Html.DropDownListFor(m => m.SelectedPackage, new SelectList(ViewBag.Packages, "Name", "Name"))
+    <br />
+    <br />
+
+    <label>License Code:</label>
+    @Html.DropDownListFor(m => m.LicenseCode, new SelectList(ViewBag.Codes))
+    <br />
+    <br />
+
+    <input type="submit" value="Register" />
+}
+

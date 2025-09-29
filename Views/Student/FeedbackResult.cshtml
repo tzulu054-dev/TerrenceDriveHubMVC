@@ -1,0 +1,10 @@
+﻿@model TerrenceDriveHubMVC.Models.Feedback
+
+<h2>Thank You for Your Feedback!</h2>
+
+<p><strong>Comment:</strong> @Model.Comment</p>
+<p><strong>Rating:</strong> @Model.Rating</p>
+<p><strong>Submitted On:</strong> @Model.CreatedAt.ToShortDateString()</p>
+
+<a href="@Url.Action("Index", "Student")">Back to Registration</a>
+
